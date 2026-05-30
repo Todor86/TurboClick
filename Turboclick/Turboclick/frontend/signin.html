@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign In — TurboClick</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="auth-page">
+  <div class="auth-card">
+    <div class="logo">
+      <img src="assets/images/logo.png" alt="TurboClick Logo" />
+    </div>
+    <h1>Welcome to TurboClick</h1>
+
+    <form id="signin-form">
+      <div class="input-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+      </div>
+      <div class="input-group password-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+        <span id="toggle-password" class="toggle-pw">
+          <img id="eye-icon" src="assets/images/eye-open.svg" width="24" height="24" alt="toggle" />
+        </span>
+      </div>
+      <button type="submit" class="btn-primary">Sign in</button>
+      <p id="error-msg" class="error-msg"></p>
+    </form>
+
+    <p class="auth-link">Don't have account yet? <a href="signup.html">Sign up</a></p>
+  </div>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/signin.js"></script>
+</body>
+</html>

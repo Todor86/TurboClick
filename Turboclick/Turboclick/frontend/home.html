@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home — TurboClick</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="home-page">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-logo">
+      <img src="assets/images/logo.png" alt="TurboClick" />
+      <span class="header-logo-text">TurboClick</span>
+    </div>
+    <nav class="nav">
+      <a href="home.html" class="nav-link active">Home</a>
+      <a href="#" class="nav-link">Market</a>
+      <a href="#" class="nav-link">Rating</a>
+    </nav>
+    <div class="profile">
+      <div class="avatar">
+        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M24 44C35.0457 44 44 35.0457 44 24C44 12.9543 35.0457 4 24 4C12.9543 4 4 12.9543 4 24C4 35.0457 12.9543 44 24 44Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M24 26C27.3137 26 30 23.3137 30 20C30 16.6863 27.3137 14 24 14C20.6863 14 18 16.6863 18 20C18 23.3137 20.6863 26 24 26Z" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M13 40V36.823C13 35.8091 13.4636 34.8367 14.2887 34.1197C15.1139 33.4028 16.233 33 17.4 33H30.6C31.767 33 32.8861 33.4028 33.7113 34.1197C34.5364 34.8367 35 35.8091 35 36.823V40" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <div class="profile-info">
+        <span id="user-name" class="profile-name">...</span>
+        <div class="profile-coins">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 22C17.523 22 22 17.523 22 12C22 6.477 17.523 2 12 2C6.477 2 2 6.477 2 12C2 17.523 6.477 22 12 22Z" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M9 15C9.644 15.86 10.843 16.35 12 16.391C13.536 16.446 15 15.711 15 14C15 11 9.5 12.5 9.5 9.5C9.5 7.87 10.68 7.273 12 7.309C13.109 7.339 14.315 7.815 15 8.5M12 7.309V5.5M12 16.391V18.5" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span id="user-balance">0</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main class="main">
+
+    <!-- LEFT PANEL: Upgrades + Stats -->
+    <div class="left-panel">
+
+      <!-- Upgrades -->
+      <aside class="shop">
+        <div id="upgrades-list"></div>
+      </aside>
+
+      <!-- Stats -->
+      <div class="stats">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M32.0693 41.384C31.3688 43.7001 30.08 45.7951 28.3286 47.4646C26.5772 49.1342 24.423 50.3213 22.0761 50.9102C19.7292 51.4992 17.2697 51.4697 14.9375 50.8249C12.6054 50.18 10.4802 48.9417 8.76921 47.2307C7.05824 45.5197 5.81993 43.3945 5.17506 41.0624C4.53018 38.7302 4.50077 36.2707 5.08969 33.9238C5.6786 31.5769 6.86574 29.4227 8.5353 27.6713C10.2049 25.9199 12.2999 24.6311 14.6159 23.9307" stroke="#ffd700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M35 14H37.3333V23.3333" stroke="#ffd700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M14.3127 34.4587L16.3334 33.292L21.0001 41.3747" stroke="#ffd700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M37.3333 32.6667C45.0652 32.6667 51.3333 26.3987 51.3333 18.6667C51.3333 10.9348 45.0652 4.66675 37.3333 4.66675C29.6013 4.66675 23.3333 10.9348 23.3333 18.6667C23.3333 26.3987 29.6013 32.6667 37.3333 32.6667Z" stroke="#ffd700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="stat-text">
+            <span class="stat-value" id="total-coins">0</span>
+            <span class="stat-label">Total TurboClick</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.0794 29.5891C27.9953 29.3781 27.9749 29.147 28.0207 28.9245C28.0665 28.702 28.1765 28.4978 28.3372 28.3372C28.4978 28.1765 28.702 28.0665 28.9245 28.0207C29.147 27.9749 29.3781 27.9953 29.5891 28.0794L50.5891 36.2461C50.8142 36.3341 51.0065 36.4898 51.1393 36.6918C51.2721 36.8937 51.3389 37.132 51.3304 37.3735C51.322 37.6151 51.2387 37.8481 51.0921 38.0403C50.9455 38.2325 50.7428 38.3744 50.5121 38.4464L42.4761 40.9384C42.1135 41.0505 41.7837 41.2494 41.5154 41.5177C41.247 41.7861 41.0482 42.1158 40.9361 42.4784L38.4464 50.5121C38.3744 50.7428 38.2325 50.9455 38.0403 51.0921C37.8481 51.2387 37.6151 51.322 37.3735 51.3304C37.132 51.3389 36.8937 51.2721 36.6918 51.1393C36.4898 51.0065 36.3341 50.8142 36.2461 50.5891L28.0794 29.5891Z" stroke="#ffd700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M49 25.6667V11.6667C49 10.429 48.5083 9.242 47.6332 8.36683C46.758 7.49167 45.571 7 44.3333 7H11.6667C10.429 7 9.242 7.49167 8.36683 8.36683C7.49167 9.242 7 10.429 7 11.6667V44.3333C7 45.571 7.49167 46.758 8.36683 47.6332C9.242 48.5083 10.429 49 11.6667 49H25.6667" stroke="#ffd700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="stat-text">
+            <span class="stat-value" id="coins-per-click">1</span>
+            <span class="stat-label">Coins per Click</span>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M28.0001 51.3334C40.8867 51.3334 51.3334 40.8867 51.3334 28.0001C51.3334 15.1134 40.8867 4.66675 28.0001 4.66675C15.1134 4.66675 4.66675 15.1134 4.66675 28.0001C4.66675 40.8867 15.1134 51.3334 28.0001 51.3334Z" stroke="#ffd700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M28 14V28L37.3333 32.6667" stroke="#ffd700" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="stat-text">
+            <span class="stat-value"><span id="passive-income">0</span>/sec</span>
+            <span class="stat-label">Passive Income</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CENTER: Click area -->
+    <section class="center">
+      <div class="click-area">
+        <button id="click-btn" class="click-btn">
+          <img src="assets/images/logo.png" alt="Click!" class="click-logo" />
+        </button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer glass-card">
+    <a href="#">About game</a>
+    <a href="#">Help center</a>
+    <a href="#">Rules</a>
+  </footer>
+
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/home.js"></script>
+</body>
+</html>
