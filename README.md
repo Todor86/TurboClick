@@ -31,14 +31,6 @@ This project was developed with a strong focus on visual storytelling, branding,
 
 ---
 
-## 📸 Screenshots & Previews
-*(Feel free to replace this placeholder with your actual Figma mockups or UI screenshots later!)*
-<p align="center">
-  <img src="https://via.placeholder.com/300x600?text=TurboClick+UI+Layout" alt="TurboClick UI Layout" width="300" />
-</p>
-
----
-
 ## 🚀 How to Run Locally
 1. Clone the repository:
 ```bash
